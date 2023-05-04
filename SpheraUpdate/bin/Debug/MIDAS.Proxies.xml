@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MIDAS.Proxies
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:MIDAS.Proxies.EnterpriseServiceClient.GetIDNumsNoCache(System.Object,MIDAS.Entities.IDNumMatch,MIDAS.Entities.IDNumFilter)">
+<summary>
+This function will return a list of IDNums based on a search criteria directly from the database instead of using the IDNum cache. (Live Data)
+</summary>
+<param name="key">Single string or number entry for what you want to search on</param>
+<param name="match">Enumerated category for what you want to search on</param>
+<param name="filter">Enumerated filter for your return set - All or Active</param>
+<returns>Returns a list of IDNum objects</returns>
+</member>
+<member name="M:MIDAS.Proxies.EnterpriseServiceClient.SaveMidasActivityLog(MIDAS.Entities.MIDASAction@)">
+<summary>
+This sub will save the MIDAS Activity object to the CLNEMRESQLDBP01 database.  Use the MIDAS.Entities.MIDASAction object for activity values
+</summary>
+<param name="MidasActivity">MIDAS.Entities.MIDASAction object to be saved.  Create the new object and add the values as relevent</param>
+</member>
+</members>
+</doc>

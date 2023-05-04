@@ -1,0 +1,198 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MIDAS.Entities
+</name>
+</assembly>
+<members>
+<member name="T:MIDAS.Entities.LabStat.BacklogEntry">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.CustomBacklogReport">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.ImportMap._Rounding">
+ <summary>
+ Rounding scheme for the Reported Value of the Result
+ Format - [Scheme]|[Places]
+ S - significant figures
+ R - simple rounding
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCDisplaySample">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCID">
+ <summary>
+ QC-ID Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCInstrumentID">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCLimitsSample">
+ <summary>
+ ASTM Repeatability Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCMethod">
+ <summary>
+ QC Method is for the LabStat environment.  It is a parameter definition of the QC Method managed by LabStat
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCMethodASTM">
+ <summary>
+ ASTM Repeatability Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCMethodLimits">
+ <summary>
+ QC Method is for the LabStat environment.  It is a parameter definition of the QC Method managed by LabStat
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCMidasSample">
+ <summary>
+ QC Related MIDAS Samples Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCParameter">
+ <summary>
+ Parameter Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCPerson">
+ <summary>
+ Contact object for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCResult">
+ <summary>
+ QC Result object for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCSample">
+ <summary>
+ ASTM Repeatability Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.QCSaveData">
+ <summary>
+ ASTM Repeatability Object for LabStat Quality Control System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.RRMethod">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.RRSubMethod">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.Sample">
+ <summary>
+ LabStat Sample object
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.SearchItem">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.SearchQuery">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.StarCalibrant">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.StarTarget">
+ <summary>
+ Display object for visualization for LabStat Quality Controls System
+ </summary>
+</member>
+<member name="T:MIDAS.Entities.LabStat.TPIMethod">
+ <summary>
+ TPI Object for Methods for LabStat Quality Control System
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._MethodName">
+ <summary>
+ The base Method name for the TPI
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._MethodDescription">
+ <summary>
+ Method description for the TPI.  Purely informative
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._QCID">
+ <summary>
+ QC-ID used for this TPI calculation
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._Parameter">
+ <summary>
+ The analyzed parameter used for this TPI calculation
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._TestMean">
+ <summary>
+ The experimental mean for this Parameter/QC-ID combination
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._TestSigma">
+ <summary>
+ The experimental sigma for this Parameter/QC-ID combination
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._TestR">
+ <summary>
+ The experimental R value for this Parameter/QC-ID combination
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._Count">
+ <summary>
+ The number of points used for this TPI calculation
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._ASTMR">
+ <summary>
+ The ASTM R value for this Parameter
+ </summary>
+</member>
+<member name="F:MIDAS.Entities.LabStat.TPIMethod._TPI">
+ <summary>
+ The calculated TPI based on the experimental R and ASTM R
+ </summary>
+</member>
+<member name="M:MIDAS.Entities.LabStat.TPIMethod.CalculateTPI">
+ <summary>
+ Calculates the TPI based on the values in the object.  Nothing it passed in and the TPI value is updated
+ </summary>
+</member>
+<member name="P:MIDAS.Entities.Backlog.ActivatedDate">
+<summary>
+The date the sample was Activated
+</summary>
+</member>
+<member name="P:MIDAS.Entities.Backlog.Age">
+<summary>
+How long the sample has been backlogged
+</summary>
+</member>
+</members>
+</doc>

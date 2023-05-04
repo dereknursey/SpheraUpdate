@@ -1,0 +1,642 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MIDAS.Utilities
+</name>
+</assembly>
+<members>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:MIDAS.Utilities.Conversion.ConvertNameToAlias(System.String)">
+ <summary>
+
+ </summary>
+ <param name="name"></param>
+ <returns></returns>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatAliasRecord(System.String,System.String,System.Int32,System.String,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="aliasCode"></param>
+ <param name="aliasType"></param>
+ <param name="testSeqNo"></param>
+ <param name="methodNo"></param>
+ <param name="masterMethodNo"></param>
+ <param name="aliasValue"></param>
+ <param name="No_Of_ResultRecord"></param>
+ <param name="testComment"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatAnalystInfo(System.String,System.Double,System.Int64,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="analystCode"></param>
+ <param name="analystTestTime"></param>
+ <param name="analystIdentification"></param>
+ <param name="analystName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatEndReportRecord(System.String,System.Int64)">
+ <summary>
+ 
+ </summary>
+ <param name="endReportCode"></param>
+ <param name="No_Of_Result"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatFileCommentRecord(System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="fileCommentCode"></param>
+ <param name="fileComment"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatFileHeaderRecord(System.String,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="fileHeaderCode"></param>
+ <param name="fileVersion"></param>
+ <param name="fileDataStatus"></param>
+ <param name="facilityCode"></param>
+ <param name="fileHeaderComment"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatResultRecord(System.String,System.Int64,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="resultRecordCode"></param>
+ <param name="resultId"></param>
+ <param name="resultFlag"></param>
+ <param name="resultValue"></param>
+ <param name="resultUnit"></param>
+ <param name="remark"></param>
+ <param name="resultComment"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatSampleRecord(System.String,System.String,System.String,System.Int32,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="sampleCode"></param>
+ <param name="sampleType"></param>
+ <param name="labSplitNo"></param>
+ <param name="testSeqNo"></param>
+ <param name="methodNo"></param>
+ <param name="masterMethodNo"></param>
+ <param name="No_Of_ResultRecord"></param>
+ <param name="testComment"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatTestConditionRecord(System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="testConditionCode"></param>
+ <param name="testConditionComment"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatTracebackRecord(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="tracebackCode"></param>
+ <param name="workID"></param>
+ <param name="runNo"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatDBLabNumber(System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="input"></param>
+ <param name="useContainerFormat"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatLabNumber(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="input"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatLabNumber(System.String,System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="input"></param>
+ <param name="withoutSplit"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatHFRString(MIDAS.Entities.Substance)">
+ <summary>
+ 
+ </summary>
+ <param name="substance"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatMethodName(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="input"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Format.FormatMR_Result(System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="resultPrefix"></param>
+ <param name="result"></param>
+ <param name="units"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:MIDAS.Utilities.Helper">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.GetDiagnostics">
+ <summary>
+ 
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.SetDiagnostics(System.Boolean)">
+ <summary>
+ 
+ </summary>
+ <param name="diagnosticsFlag"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.FaultExceptionStringBuilder(System.ServiceModel.FaultException{MIDAS.Entities.MIDASException})">
+ <summary>
+ This function takes a MIDASException object and formats the Message of each exception to a usable string
+ </summary>
+ <param name="fex">MIDASException object to be parsed</param>
+ <returns>Returns a formated string of the exception Messages</returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.GetRemoteAddress(System.Int32)">
+ <summary>
+ Get the MIDAS Application Server IP based on the app.config setting
+ </summary>
+ <param name="serviceHost">The app.config ServiceHost value</param>
+ <returns>Return the IP address for the selected MIDAS Server</returns>
+ <remarks>
+ 2 - CLNEMREMIDASD01
+ 7 - CLNEMREMIDAS01
+ 8 - CLNEMREMIDAST
+ 9 - CLNEMREMIDAS02
+ 10 - CLNEMREMIDAS03
+ All other ServiceHost IDs are discontinued
+ </remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.GetEnumDescription(System.Enum)">
+ <summary>
+ 
+ </summary>
+ <param name="enumConstant"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.IsInProject(MIDAS.Entities.Employee,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="employee"></param>
+ <param name="project"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.IsInProjects(MIDAS.Entities.Employee,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="employee"></param>
+ <param name="projects"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.IsInRole(MIDAS.Entities.Employee,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="employee"></param>
+ <param name="role"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.IsInRoles(MIDAS.Entities.Employee,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="employee"></param>
+ <param name="roles"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.SendMail(System.String,System.String,System.String,System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="fromRecipient"></param>
+ <param name="toRecipients"></param>
+ <param name="subject"></param>
+ <param name="body"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Helper.SendMailWithAttachment(System.String,System.String,System.String,System.String,System.String,System.String@)">
+ <summary>
+ 
+ </summary>
+ <param name="fromRecipient"></param>
+ <param name="toRecipients"></param>
+ <param name="subject"></param>
+ <param name="body"></param>
+ <param name="filename"></param>
+ <param name="returnString"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.ResultsReporting.SendErrorMail(System.String,System.String)">
+ <summary>
+ Send Results Reporting Error Email
+ </summary>
+ <param name="Errors">Errors string</param>
+ <param name="Method">Method name (Optional)</param>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.ResultsReporting.ShowNWAChart(System.String,System.String@)">
+ <summary>
+ Display NWA Run File
+ </summary>
+ <param name="RunFilePath">The file path for the NWA Run File</param>
+ <param name="message">Return errors string</param>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.ResultsReporting.SendGeneralEmail(System.String,System.String,System.String)">
+ <summary>
+ Send Generic Results Reporting Email
+ </summary>
+ <param name="Subject">Email subject string</param>
+ <param name="Content">Email body.  Can be HTML</param>
+ <param name="Recipients">Comma separated list of email recipients</param>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule1(System.Double,System.Double,System.Double,System.String@)">
+ <summary>
+ SixSigma Rule 1 Test - One or more points beyond the control limits
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="meanValue">The mean value for the dataset</param>
+ <param name="sigma">The sigma value for the dataset</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule2(System.Double,System.Double,System.Double,System.Double,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 2 Test - 2 out of 3 consecutive points greater than 1 sigma
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="previousValue">The previous point evaluated</param>
+ <param name="meanValue">The mean value for the dataset</param>
+ <param name="sigma">The sigma value for the dataset</param>
+ <param name="count">Referenced count of the point if failed</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule3(System.Double,System.Double,System.Double,System.Double,System.Int32@,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 3 Test - 4 out of 5 consecutive points greater than 1 sigma
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="previousValue">The previous point evaluated</param>
+ <param name="meanValue">The mean value for the dataset</param>
+ <param name="sigma">The sigma value for the dataset</param>
+ <param name="count">Referenced count of the point if failed</param>
+ <param name="flip">Referenced count for the allowed pass</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule4(System.Double,System.Double,System.Double,System.Int32@,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 4 Test - 7 or more consecutive points on one side of the mean
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="meanValue">The mean value for the dataset</param>
+ <param name="sigma">The sigma value for the dataset</param>
+ <param name="count">Referenced count of the point in the trend</param>
+ <param name="trend">Referenced flag for which side of the mean</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule5(System.Double,System.Double,System.Int32@,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 5 Test - 7 consecutive points trending up or trending down
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="previousValue">The previous point evaluated</param>
+ <param name="count">Referenced count of the point in the trend</param>
+ <param name="trend">Referenced flag for direction of trend</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule6(System.Double,System.Double,System.Double,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 6 Test - 8 or more consecutive points outside of 1 sigma
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="meanValue">The mean value for the dataset</param>
+ <param name="sigma">The sigma value for the dataset</param>
+ <param name="count">Referenced count of the point in the trend</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule7(System.Double,System.Double,System.Double,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 7 Test - 15 or more consecutive points within 1 sigma
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="meanValue">The mean value for the dataset</param>
+ <param name="sigma">The sigma value for the dataset</param>
+ <param name="count">Referenced count of the point in the trend</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="M:MIDAS.Utilities.LabStat.SixSigma.SSRule8(System.Double,System.Double,System.Double,System.Double,System.Int32@,System.Int32@,System.String@)">
+ <summary>
+ SixSigma Rule 8 Test - 15 consecutive points alternating up and down
+ </summary>
+ <param name="currentValue">The current point being evaluated</param>
+ <param name="previousValue">The previous point evaluated</param>
+ <param name="count">Referenced count of the point in the trend</param>
+ <param name="trend">Referenced flag for direction of trend</param>
+ <param name="message">Referenced string for failure message</param>
+ <returns>Returns a boolean indicating if the point failed</returns>
+</member>
+<member name="T:MIDAS.Utilities.Payload">
+ <summary>
+ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractAliasTranslate(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractBacklogs(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractBillingCharges(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractDistillations(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractEmployees(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractEquipmentRecords(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractExperiments(System.String,System.Collections.Generic.List{MIDAS.Entities.MR_Experiment}@)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <param name="experiments"></param>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractGPAQS(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractGPAQSFootNotes(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractIDNUM(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractMIDPEmployee(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractMIDPEmployeeProjects(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractPROMIS(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractRooms(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractSampleHeaders(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractSampleHeadersAndTests(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractSampleLocators(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractSuppliers(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractStationaryRequests(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractSTB(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractStockroomPOs(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractStockroomRequests(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractSubstances(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractVendors(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractWorkOrders(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractWorkRequests(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:MIDAS.Utilities.Payload.ExtractZinsserComponents(System.String)">
+ <summary>
+ 
+ </summary>
+ <param name="payload"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:MIDAS.Utilities.WebFileLogTraceListener">
+ <summary>
+ Custom log file trace writer for web saving
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>
